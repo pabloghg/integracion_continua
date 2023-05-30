@@ -9,7 +9,8 @@ async function get_usuarios() {
             host: 'db',
             user: 'root',
             password: 'root',
-            database: 'integracion_continua'
+            database: 'integracion_continua',
+            port: 3306
         });
         con.connect(function (er) {
             if (er) rej(er);
